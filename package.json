@@ -1,7 +1,7 @@
 {
     "name": "new-repository",
     "version": "0.0.1",
-    "description": "Concord Consortium Starter CODAP Plugin",
+    "description": "New Plugin",
     "main": "index.js",
     "browserslist": "> 0.2%, last 5 versions, Firefox ESR, not dead, not ie > 0",
     "jest": {
@@ -126,7 +126,8 @@
         "wait-on": "^8.0.3",
         "webpack": "^5.98.0",
         "webpack-cli": "^6.0.1",
-        "webpack-dev-server": "^5.2.0"
+        "webpack-dev-server": "^5.2.0",
+        "cypress": "^13.0.0"
     },
     "dependencies": {
         "@concord-consortium/codap-plugin-api": "^0.1.7",
