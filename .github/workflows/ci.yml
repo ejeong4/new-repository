@@ -36,6 +36,7 @@ jobs:
         uses: actions/checkout@v4
       - uses: cypress-io/github-action@v6
         with:
+          build: npm i -D cypress
           start: npm start
           wait-on: 'http://localhost:8080'
           # only record the results to dashboard.cypress.io if CYPRESS_RECORD_KEY is set
