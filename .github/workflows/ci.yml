@@ -34,7 +34,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - uses: cypress-io/github-action@v10
+      - uses: cypress-io/github-action@v6
         with:
           build: npm i -D cypress
           start: npm start
@@ -57,7 +57,7 @@ jobs:
           # by default.
           CYPRESS_coverage: true
       - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v10
+        uses: codecov/codecov-action@v4
         with:
           flags: cypress
           token: ${{ secrets.CODECOV_TOKEN }}
